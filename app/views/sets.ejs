@@ -1,0 +1,25 @@
+<%- include('./partials/header') %>
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>
+            Nom de l'edition
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+  
+        <% sets.forEach( (set)=> { %>
+          <tr>
+            <td>
+              <%= set.name%>
+            </td>
+          </tr>
+          <%})%>
+  
+      </tbody>
+    </table>
+  </div>
+  
+  <%- include('./partials/footer') %>

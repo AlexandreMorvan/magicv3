@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(248, 252, 248);
+    background-image: url("https://images4.alphacoders.com/882/882310.jpg");
+  }
+  
+.fof {
+    color: rgb(7, 7, 7);
+}
+  
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-container {
+    margin: 1rem;
+}
+
+.card {
+    opacity: 0.7;
+}
+
+.card-padding {
+    margin: 1rem;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    padding-top: 0.5rem;
+}
+
+.table{
+    text-align: center;
+}
