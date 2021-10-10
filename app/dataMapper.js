@@ -10,9 +10,12 @@ const dataMapper = {
         database.query(query, callback);
     },
 
-    getOneSet: function (callback) {
+    getOneSet: function (name, callback) {
+        console.log(name);
+
         const query = {
-            text:``
+            text:`SELECT * FROM sets JOIN cards ON sets.name=cards.set_name WHERE sets.name='${name}';
+            `
         };
         database.query(query,callback);
     }
