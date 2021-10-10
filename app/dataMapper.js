@@ -10,6 +10,13 @@ const dataMapper = {
         database.query(query, callback);
     },
 
+    getOneSet: function (callback) {
+        const query = {
+            text:``
+        };
+        database.query(query,callback);
+    }
+
 }
 
 

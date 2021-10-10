@@ -9,17 +9,28 @@
         </tr>
       </thead>
       <tbody>
-  
+
         <% sets.forEach( (set)=> { %>
           <tr>
             <td>
-              <%= set.name%>
+              <article class="media">
+                <figure class="media-left">
+                    <img class="image is-64x64" src="<%= set.icon_svg_uri %>">
+                </figure>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                       <a href="/sets/<%= set.name%>"><%= set.name%></a><small> <%=set.released_at%></small>
+                      <br>
+                    </p>
+                  </div>
+                </div>
+              </article>
             </td>
           </tr>
           <%})%>
-  
       </tbody>
     </table>
   </div>
-  
+
   <%- include('./partials/footer') %>

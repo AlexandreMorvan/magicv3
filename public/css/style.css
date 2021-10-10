@@ -2,11 +2,11 @@ body {
     background-color: rgb(248, 252, 248);
     background-image: url("https://images4.alphacoders.com/882/882310.jpg");
   }
-  
+
 .fof {
     color: rgb(7, 7, 7);
 }
-  
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -37,3 +37,9 @@ body {
 .table{
     text-align: center;
 }
+
+.media{
+    display: flex;
+}
+
+
