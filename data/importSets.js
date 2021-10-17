@@ -22,9 +22,6 @@ const importFunction = async () => {
         try {
             const res = await client.query(text, values);
             console.log(res.rows[0]);
-
-            // le res.rows[0] correspond à un objet { id: 16, label: 'Accueil' }
-            // la forme de cette objet est définie dans le RETURNING de l'INSERT
             setsBDD.push(res.rows[0]);
         } catch (err) {
             console.log(err.stack);

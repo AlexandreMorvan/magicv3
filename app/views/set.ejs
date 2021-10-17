@@ -1,4 +1,35 @@
 <%- include('./partials/header') %>
 
+<table class="table">
+  <thead>
+    <tr>
 
+      <th>Nom</th>
+      <th>Cout en mana</th>
+      <th>Rareté</th>
+      <th>Texte</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+
+      <th>Nom</th>
+      <th>Cout en mana</th>
+      <th>Rareté</th>
+      <th>Texte</th>
+    </tr>
+  </tfoot>
+  <tbody>
+
+    <% set.forEach( (elm)=> { %>
+      <tr>
+        <td><%= elm.name %></td>
+        <td><%=elm.manacost%></td>
+        <td><%=elm.rarity%></td>
+        <td><%=elm.oracle_text%></td>
+      </tr>
+    <%})%>
+
+  </tbody>
+</table>
 <%- include('./partials/footer') %>

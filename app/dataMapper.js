@@ -14,7 +14,7 @@ const dataMapper = {
         console.log(name);
 
         const query = {
-            text:`SELECT * FROM sets JOIN cards ON sets.name=cards.set_name WHERE sets.name='${name}';
+            text:`SELECT * FROM sets JOIN cards ON sets.name=cards.set_name WHERE sets.name='${name}' ORDER BY cards.name;
             `
         };
         database.query(query,callback);
