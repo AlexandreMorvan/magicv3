@@ -5,6 +5,7 @@
     <tr>
 
       <th>Nom</th>
+      <th>Type</th>
       <th>Cout en mana</th>
       <th>Rareté</th>
       <th>Texte</th>
@@ -14,6 +15,7 @@
     <tr>
 
       <th>Nom</th>
+      <th>Type</th>
       <th>Cout en mana</th>
       <th>Rareté</th>
       <th>Texte</th>
@@ -23,8 +25,9 @@
 
     <% set.forEach( (elm)=> { %>
       <tr>
-        <td><%= elm.name %></td>
-        <td><%=elm.manacost%></td>
+        <td><%=elm.name%></td>
+        <td><%=elm.type_line%></td>
+        <td class="ms"><%=elm.manacost%></td>
         <td><%=elm.rarity%></td>
         <td><%=elm.oracle_text%></td>
       </tr>
